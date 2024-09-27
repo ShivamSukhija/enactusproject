@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspire 2024</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="inde.js"></script>
+    <script src="https://kit.fontawesome.com/0a21f7e5d2.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="43905221.png">
+</head>
+<body class="font-sans text-white bg-gray-100">
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex justify-between p-6 lg:px-8">
+            <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                <h3 class="h-8 w-auto font-serif text-3xl">Aspire</h3>
+                </a>
+            </div>
+            
+                <div class="hidden lg:flex lg:gap-x-12">
+                        <a href="#" class="text-sm font-semibold leading-6 ">Overview</a>
+                        <a href="#about" class="text-sm font-semibold leading-6 ">Event Info</a>
+                        <a href="#enactus" class="text-sm font-semibold leading-6 ">About Us</a>
+                        <a href="#contact" class="text-sm font-semibold leading-6 ">Contact Us</a>
+                
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end mr-6">
+                    <a href="registration.html" class="text-sm font-semibold leading-6 ">Register <span>&rarr;</span></a>
+                </div>
+
+                <a class="lg:hidden" onclick="hide()" id="menu"> 
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                </a>
+      <!-- Mobile menu-->
+      <div class="hidden" id="mobileheader">
+        <div class="fixed inset-0 z-50"></div>
+        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1">
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-gray-700 -m-1.5 p-1.5">
+              <h3 class="h-8 w-auto font-serif text-3xl">Aspire</h3>
+            </a>
+            <button type="button" class="text-gray-700" onclick="hide()">
+              <i class="fa-solid fa-xmark fa-2xl"></i>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="#" onclick="hide()" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Overview</a>
+                <a href="#about" onclick="hide()" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Event Info</a>
+                <a href="#enactus" onclick="hide()" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</a>
+                <a href="#contact" onclick="hide()" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact Us</a>
+              </div>
+              <div class="py-6">
+                <a href="registration.html" onclick="hide()" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+
+    <section id="home" class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-black to-gray-800 transform scale-110"></div>
+        <div class="relative z-10">
+            <h1 class="text-5xl font-bold mb-4">Aspire 2024</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join us on October 21, 2024 for the annual business conclave by Enactus NSUT</p>
+            <a href="registration.html" class="bg-accent text-white font-bold py-3 px-8 rounded-full transition-colors">Register Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 text-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">About Aspire</h2>
+            <p class="text-xl text-center mb-12 max-w-3xl mx-auto">Aspire is the flagship event of Enactus NSUT, bringing together visionary minds and industry leaders. Our business conclave features cutting-edge competitions in entrepreneurship, including case studies and business plan presentations.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Purpose</h3>
+                    <p>To foster innovation and entrepreneurship among students and young professionals.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Themes</h3>
+                    <p>Sustainable Development, Social Entrepreneurship, Tech Innovation</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Activities</h3>
+                    <p>Case Study Competitions, Business Plan Presentations, Networking Sessions, Keynote Speeches</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-20 bg-fixed bg-cover bg-center" style="background-image: url('bgimg.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center text-white">
+            <h2 class="text-4xl font-bold">Innovate. Inspire. Impact.</h2>
+        </div>
+    </section>
+
+    <section id="schedule" class="schedule flex justify-center items-center content-center pb-4">
+        <div class="container">
+            <h2 class="text-center text-4xl font-bold mb-12 mt-6">Event Timeline</h2>
+            <div class="timeline text-xl font-semibold">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>9:00 AM</h3>
+                        <p>Opening Ceremony</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>10:00 AM</h3>
+                        <p>Case Study Competition</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>12:00 PM</h3>
+                        <p>Lunch Break</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>1:00 PM</h3>
+                        <p>Business Plan Competition</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>3:00 PM</h3>
+                        <p>Keynote Speaker</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>4:00 PM</h3>
+                        <p>Awards Ceremony</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-20 bg-fixed bg-cover bg-center" style="background-image: url('philip-oroni-h9N7bm-HRCo-unsplash.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center text-white">
+            <h2 class="text-4xl font-bold">Empowering Future Leaders</h2>
+        </div>
+    </section>
+
+    <section id="enactus" class="py-20 text-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">About Enactus NSUT</h2>
+            <p class="text-xl text-center mb-12 max-w-3xl mx-auto">Enactus NSUT is a student-run organization at Netaji Subhas University of Technology, dedicated to creating a better world through entrepreneurial action. We develop and implement sustainable projects that address social, economic, and environmental challenges in our communities.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <h3 class="text-2xl font-bold mb-4">Project Kilkari</h3>
+                    <img src="Pic-8-1-scaled.jpg" alt="Project Kilkari" class="w-full h-60 object-cover mb-4 rounded">
+                    <p>Empowering rural artisans through digital marketing and skill development.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <h3 class="text-2xl font-bold mb-4">Project Saksharta</h3>
+                    <img src="IMG_5460-scaled.jpg" alt="Project Saksharta" class="w-full h-60 object-cover mb-4 rounded">
+                    <p>Providing quality primary education to children and generating a source of income for the educated youth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-20" style="background-color: rgb(192, 132, 151)">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact Us</h2>
+            <form id="contact-form" class="max-w-lg mx-auto space-y-4">
+                <input type="text" id="contact-name" name="contact-name" placeholder="Your Name" required class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-gray-900">
+                <input type="email" id="contact-email" name="contact-email" placeholder="Your Email" required class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-gray-900">
+                <textarea id="message" name="message" placeholder="Your Message" required class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-gray-900" rows="4"></textarea>
+                <button type="submit" class="w-full bg-accent hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">Send Message</button>
+            </form>
+            <div class="flex justify-center space-x-6 mt-8">
+                <a href="#" class="text-accent hover:text-blue-600 transition-colors"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="#" class="text-accent hover:text-blue-600 transition-colors"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="#" class="text-accent hover:text-blue-600 transition-colors"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href="#" class="text-accent hover:text-blue-600 transition-colors"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            </div>
+            <p class="text-center mt-8">Email: contact@enactusnsut.org</p>
+        </div>
+    </section>
+    
+
+    <footer class="bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="flex justify-between">
+                <div class="mb-6 md:mb-0 grid grid-rows-2">
+                   
+                        <h3 class="h-8 w-auto font-serif text-3xl">Aspire</h3>
+                        <span class="flex self-center text-2xl font-semibold whitespace-nowrap text-gray-200">by <img src="43905221.png" alt="bgimg2" class="h-8 mx-2">Enactus Nsut </span>
+                    
+                </div>
+                
+                <div class="grid gap-8 sm:gap-6">
+                    <div>
+                        <ul class="text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Overview</a>
+                            </li>
+                            <li>
+                                <a href="registration.html" class="hover:underline">Registration</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-center text-gray-400">© 2024 Aspire™. All Rights Reserved. </span>
+        </div>
+    </footer>
+</body>
+</html>
